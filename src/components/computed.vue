@@ -3,21 +3,19 @@
     <h3>{{ getResult }}</h3>
 </template>
 <script>
-export default{
+export default {
     name: "yesNo",
-    data(){
+    data() {
         return {
-        name:"Sciene",
+            name: "Sciene",
         }
     },
-    
-    computed:{
-        getResult(){
+
+    computed: {
+        getResult() {
             return this.name.split("").reverse("").join("")
         }
     }
 }
 </script>
-<style>
-
-</style>
+<style></style>
