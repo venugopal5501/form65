@@ -1,16 +1,23 @@
 <template>
-  <!-- <img alt="Digital logo" width="300" height="80" src="./assets/Digital_Logo.png"> -->
-  <HomePage />
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HomePage msg="Welcome to Your Vue.js App"/>
+   <HomePage/>
+  <userPage item="some data" name="user-cmp"/>
 </template>
+
 <script>
 import HomePage from './components/HelloWorld.vue'
+import userPage from './components/User.vue'
+
 export default {
   name: 'App',
   components: {
-    HomePage
+    HomePage,
+    userPage
   }
 }
 </script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
